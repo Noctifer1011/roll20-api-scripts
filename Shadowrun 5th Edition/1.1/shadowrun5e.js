@@ -667,7 +667,7 @@ var sr5api = sr5api || (function() {
         //Display the result of the roll (.expression) and the id of the token (.token);
         //  This actually rolls the dice for initiative, using double brackets on either
         //  side of character.expression
-        const roll = character.expression ? `[[${character.expression}]]` : `<a ${circles} href="!sr5 --rollInit --error">!</a>`
+        const roll = character.expression ? `[[${character.expression} [${character.token}]]]` : `<a ${circles} href="!sr5 --rollInit --error">!</a>`
         feedback += `<div style='color: ${accent}; width: 15%; display: inline-block;'>${roll}</div>`
         //Close out the theming for the box
         feedback += `</div><br />`
